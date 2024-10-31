@@ -1,0 +1,18 @@
+alf='abcdefghijklmnopqrstuvwxyz'
+count=0
+for p1 in alf:
+    for p2 in alf:
+        for p3 in alf:
+            for p4 in alf:
+                for p5 in alf:
+                    s=p1+p2+p3+p4+p5
+                    if "z" in s and "o" in s and "v" in s:
+                        for i in "zov":
+                            for j in "zov":
+                                for k in "zov":
+                                    n=i+j+k
+                                    if len(set(n))==3 and n in s:
+                                        count+=1
+
+
+print(count)
