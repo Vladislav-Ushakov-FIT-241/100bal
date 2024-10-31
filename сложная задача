@@ -1,0 +1,18 @@
+alf='ABCEHKMOPTXY'
+num='0123456789'
+count=0
+for p7 in num:
+    for p8 in num:
+        for p1 in alf:
+            for p5 in alf:
+                for p6 in alf:
+                    for p2 in num:
+                        for p3 in num:
+                            for p4 in num:
+                                s=p1+p2+p3+p4+p5+p6+p7+p8
+                                if p2+p3+p4!="000" and p7+p8!="00":
+                                    if (p2==p3 and p3==p4 and p1==p5 and p5==p6) or (p7+p8=='05') or (p1+p2+p3+p4+p5+p6=="B505KY") or (p1+p2+p3+p4+p5+p6=="B004KO"):
+                                        count+=1
+                                if count==211233:
+                                    print(s)
+                                    exit()
